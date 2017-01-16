@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; 
+}
+
+body {
+  font-family: 'danske_textregular';  
+  line-height:19.6px;
+  font-size:14px;
+  padding:40px;  
+  text-align:center;
+}
+
+p {
+  text-align:left;
+}
+label {
+  font-size:16px;
+}
+input {
+  font-size:20px;
+  margin-left:4px;
+  margin-right:18px;
+  margin-bottom:20px;
+  outline:none;
+}
+
+select {
+  min-width:50%;
+  margin:0 auto 20px auto;
+  font-size:18px;
+  outline:none;
+}
+
+@font-face {
+  font-family: 'danskenarrowsemibold';
+  src: url("../fonts/danskenarrowsemibold-webfont.eot");
+  src: url("../fonts/danskenarrowsemibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/danskenarrowsemibold-webfont.woff2") format("woff2"), url("../fonts/danskenarrowsemibold-webfont.woff") format("woff"), url("../fonts/danskenarrowsemibold-webfont.ttf") format("truetype"), url("../fonts/danskenarrowsemibold-webfont.svg#danskenarrowsemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'danske_textregular';
+  src: url("../fonts/dk_text-webfont.eot");
+  src: url("../fonts/dk_text-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/dk_text-webfont.woff2") format("woff2"), url("../fonts/dk_text-webfont.woff") format("woff"), url("../fonts/dk_text-webfont.ttf") format("truetype"), url("../fonts/dk_text-webfont.svg#danske_textregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DanskeHuman-MediumItalic';
+  src: url("../fonts/DanskeHuman-MediumItalic.eot");
+  src: url("../fonts/DanskeHuman-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/DanskeHuman-MediumItalic.woff") format("woff"), url("../fonts/DanskeHuman-MediumItalic.ttf") format("truetype"), url("../fonts/DanskeHuman-MediumItalic.svg#danske_textregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }

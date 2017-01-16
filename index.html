@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <script src="https://code.jquery.com/jquery-3.0.0.slim.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('select').on('change', function() {
+                var $o = $(this).find('option:selected');
+
+                var ms = $o.text().match(/([\d.]+)px/gi);
+                
+                $('p')
+                    .css('font-size', ms[0])
+                    .css('line-height', ms[1]);
+            });
+            $('#fontsize').on('change click focus blur keyup', function() {
+                $('p').css('font-size', $(this).val().replace(',','.')+'px');
+            });
+            $('#lineheight').on('change click focus blur keyup', function() {
+                $('p').css('line-height', $(this).val().replace(',','.')+'px');
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+<label for="fontsize">font-size</label>
+<input type="number" min="6" step="0.1" max="200" value="14" id="fontsize"/>
+<label for="lineheight">line-height</label>
+<input type="number" min="6" step="0.1" max="200" value="19.6" id="lineheight"/>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque egestas nisl sit amet augue scelerisque rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non eros libero. Vivamus condimentum augue eu commodo iaculis. Maecenas consequat quis orci in eleifend. Ut lobortis viverra sapien et tempus. Proin cursus augue a nibh euismod egestas. Nunc orci urna, sollicitudin vel massa eget, hendrerit suscipit enim. Nulla hendrerit rhoncus mauris ut posuere.</p>
+
+<p>Proin pulvinar sed purus eu varius. Fusce volutpat dolor in urna egestas mattis. Etiam vitae mattis enim, vitae porttitor diam. Nullam viverra leo bibendum magna eleifend vulputate. Morbi sed pretium sem, vel dignissim eros. Nam metus urna, hendrerit id eros vel, sagittis efficitur ligula. Curabitur rutrum justo eu vestibulum convallis. Vivamus vel mauris sit amet tortor malesuada scelerisque. In porttitor molestie sapien tempor convallis. Fusce ut facilisis felis. Phasellus sagittis dictum vestibulum.</p>
+
+<p>Suspendisse augue enim, euismod quis purus non, dapibus vestibulum mauris. Sed ut maximus est. Aenean augue augue, ultrices eu dui vel, commodo faucibus nisl. Donec consectetur eros nisl. Nam non urna interdum, sollicitudin ligula et, facilisis mauris. Cras a erat id lorem volutpat ultricies id et lectus. Maecenas et pellentesque orci. Nam mauris turpis, convallis at fringilla vitae, pellentesque id velit. Nulla bibendum vestibulum augue sit amet commodo.</p>
+
+</body>
+</html>
